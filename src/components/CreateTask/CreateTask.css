@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    background-color: #7e0e40;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: #ffd3e7;
+    cursor: pointer;
+    transition: 0.25s;
+    margin: 5px;
+}
+
+input{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    background-color: #ffd3e7;
+    cursor: pointer;
+    transition: 0.25s;
+    margin: 5px;
+}

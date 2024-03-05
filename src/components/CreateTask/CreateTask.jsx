@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CreateTask.css'
 
 export const CreateTask = () => {
     const [tasks, setTasks] = useState([]);
