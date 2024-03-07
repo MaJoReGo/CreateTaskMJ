@@ -1,10 +1,18 @@
+
 body {
     margin: 0;
     display: flex;
     place-items: center;
     background-color: #7e0e40;
 }
-
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20%;
+    background-color: rgb(255, 159, 207);
+}
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -17,6 +25,9 @@ button {
     margin: 5px;
 }
 
+.ArchivedTask {
+    color: rgb(138, 255, 255); 
+}
 input{
     border-radius: 8px;
     border: 1px solid transparent;
