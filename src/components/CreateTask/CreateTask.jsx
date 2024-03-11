@@ -30,8 +30,8 @@ export const CreateTask = () => {
     };
 
     const handleShowArchivedTasks = () => {
+        setShowPendingTasks(false); 
         setShowArchivedTasks(true);
-        setShowPendingTasks(true); // Mostrar también las tareas pendientes
     };
 
     const handleShowAllTasks = () => {
@@ -57,8 +57,10 @@ export const CreateTask = () => {
                 <button className="ButtonShowArchivedTasks" onClick={handleShowArchivedTasks}>Ver tareas archivadas</button>
                 <button className="ButtonShowAllTasks" onClick={handleShowAllTasks}>Ver todas las tareas</button>
             </div>
+            <div className="InputConter">
             <input value={newTask} onChange={handleInputChange} placeholder='Ingrese el título de la tarea' type="text"/>
-            <input value={taskDescription} onChange={handleDescriptionChange} placeholder='Ingrese la descripción de la tarea' type="text"/>
+            <textarea value={taskDescription} onChange={handleDescriptionChange} placeholder='Ingrese la descripción de la tarea' type="text"/> 
+            </div>
             <button onClick={handleAddTask}>Crear tarea</button>
             
             {showPendingTasks && tasks.map((task, index) => (
@@ -79,4 +81,3 @@ export const CreateTask = () => {
         </>
     );
 };
-
